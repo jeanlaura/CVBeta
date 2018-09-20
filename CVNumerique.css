@@ -8,69 +8,63 @@ body{
   display: inline;
   margin: 0 0 0 0 !important;
 }
-/********************************UL************************************/
-ul {
-  list-style-type:none;
-  background-color: #FEF8BA;
-  padding: 0 0 0 0 !important;
+/********************************MENU SSE1********************************/
+#sse1
+{
+    /*You can decorate the menu's container, such as adding background images through this block*/
+    background-color: #222;
+    height: 38px;
+    padding: 15px;
+    border-radius: 3px;
+    box-sizing: content-box;
 }
-li {
-  height: 30%;
-  display: inline;
+#sses1
+{
+    margin:0 auto;/*This will make the menu center-aligned. Removing this line will make the menu align left.*/
 }
-ul li a {
-  height: 30%;
-  padding: 5px;
-  display: inline;
-  background-color:#6495ED;
-  color:black;
-  text-decoration:none;
-  text-align:center;
-  border:2px solid;
-  /*pour avoir un effet "outset" avec IE :*/
-  border-color:#DCDCDC #696969 #696969 #DCDCDC;
-  word-wrap: break-word;
+#sses1 ul
+{
+    position: relative;
+    list-style-type: none;
+    float:left;
+    padding:0;margin:0;
+    border-bottom:solid 1px #6C0000;
 }
-ul li a:hover {
-  height: 30%;
-  background-color:#D3D3D3;
-  word-wrap: break-word;
-  border-color:#696969 #DCDCDC #DCDCDC #696969;
+#sses1 li
+{
+    float:left;
+    list-style-type: none;
+    padding:0;margin:0;background-image:none;
 }
-/********************************MENU LI********************************/
-#munuLi1{
-  height: 30%;
-  width: 12%;
+/*CSS for background bubble*/
+#sses1 li.highlight
+{
+    background-color:#800;
+    top:36px;
+    height:2px;
+    border-bottom:solid 1px #C00;
+    z-index: 1;
+    position: absolute;
+    overflow:hidden;
 }
-#munuLi2{
-  height: 30%;
-  width: 11%;
+#sses1 li a
+{
+    box-sizing: content-box;
+    height:30px;
+    padding-top: 8px;
+    margin: 0 20px;/*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
+    color: #fff;
+    font: normal 12px arial;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    display: block;
+    position: relative;
+    z-index: 2;
 }
-#munuLi3{
-  height: 30%;
-  width: 11%;
-}
-#munuLi4{
-  height: 30%;
-  width: 11%;
-}
-#munuLi5{
-  height: 30%;
-  width: 11%;
-}
-#munuLi6{
-  height: 30%;
-  width: 11%;
-}
-#munuLi7{
-  height: 30%;
-  width: 11%;
-}
-#munuLi8{
-  height: 30%;
-  width: 11%;
-}
-#munuLi9{
-  height: 30%;
-  width: 11%;
+/*******************************MEDIA QUERIES**********************************/
+@media screen and (max-width: 800px) {
+  #sse1, #sses1 {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
