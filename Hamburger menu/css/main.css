@@ -236,34 +236,9 @@ h1 {
 #maitrises{
   text-align: center;
 }
-.progress{
-  background-color: #31242666 !important;
-}
-.progress-meter{
-  background-color: #fff4a8B3 !important;
-  color: #312426 !important;
-}
-.progress-meter-text{
-  color: #312426 !important;
-}
-#competencesNav ul{
-  list-style-type: none !important;
-}
-#competencesNav ul li{
-  display: inline-block !important;
-  float: left !important;
-  padding: 10px !important;
-}
-#competencesNav ul li a{
-  color: #fff4a8 !important;
-  text-decoration: none !important;
-  font-weight: bold !important;
-}
-#competencesNav ul li a:hover {
-	color: #312426 !important;
-}
-#competencesNav ul li .current{
-  color: #312426 !important;
+.img_cat{
+  width: 32px;
+  height: 32px;
 }
 /**************************************************************************************************************/
 /***********************************************HOBBIES********************************************************/
@@ -283,6 +258,26 @@ h1 {
 }
 .img{
   width: 34px !important;
+}
+/**************************************************************************************************************/
+/**************************************************CONTACT******************************************************/
+/**************************************************************************************************************/
+#global-contact{
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-contact2.png) center;
+  background-size: cover;
+}
+#contact{
+  margin: 10px;
+}
+.titreContact{
+  font-size: 20px;
+}
+.sousTitreContact{
+  color: #fff4a8;
 }
 /**************************************************************************************************************/
 /**************************************************HEADER******************************************************/
@@ -340,6 +335,7 @@ a {
 }
 a:hover {
 	color: #312426 !important;
+  text-decoration: none !important;
 }
 img {
 	width: 100%;
@@ -414,3 +410,10 @@ li {
 	nav:hover ul {
 		display: block;
 	}
+  nav:hover{
+    background: url(../images/bg-nav-mobile.png) center;
+  }
+  body{
+    overflow : hidden;
+  }
+}
